@@ -1,0 +1,13 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto);
+
+.text12pxBold {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.text16pxBold {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+}

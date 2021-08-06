@@ -1,0 +1,78 @@
+.btn {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+}
+
+.btn svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn svg rect {
+  stroke-width: 4;
+  stroke-dasharray: 453, 0;
+  stroke-dashoffset: 0;
+  -webkit-transition: all 600ms ease;
+  transition: all 600ms ease;
+}
+
+.btn:hover svg rect {
+  stroke-width: 4;
+  stroke-dasharray: 196, 543;
+  stroke-dashoffset: 475;
+}
+
+.btnDisabled {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+  }
+  
+  .btnDisabled svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .btnDisabled svg rect {
+    stroke-width: 4;
+    stroke-dasharray: 453, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 600ms ease;
+    transition: all 600ms ease;
+  }
+  
+  .btnDisabled div {
+    width: 250px;
+    height: 60px;
+    text-overflow: clip;
+    background: #d2d2d2;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e4e4', endColorstr='#b3b3b3',GradientType=1 );
+  
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
