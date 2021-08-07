@@ -7,14 +7,16 @@ import styles from "./textInput.module.css";
 
 export interface TextInputProps {
   label: string;
-  value: string | number;
-  onChange: (value: string | number) => void;
+  value: string;
+  onChange: (value: string) => void;
+  password?: boolean;
 }
 
 export const TextInput: React.FC<TextInputProps> = ({
   label,
   value,
   onChange,
+  password = false
 }) => {
   const [labelState, setLabelState] = useState(styles.form__label_hide);
   const [placeHolder, setPlaceHolder] = useState(label);
@@ -39,7 +41,7 @@ export const TextInput: React.FC<TextInputProps> = ({
         {label}
       </label>
       <input
-        type="text"
+        type={password ? "password": "text"}
         id={label}
         value={value}
         onChange={(e) => onChange(e.currentTarget.value)}
