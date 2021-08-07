@@ -26,7 +26,6 @@ export const TextInput: React.FC<TextInputProps> = ({
 
   const onBlur = () => {
     setPlaceHolder(label);
-    console.log("value : ", value);
     if (value === undefined || value === "") {
       setLabelState(styles.form__label_hide);
     } else {
