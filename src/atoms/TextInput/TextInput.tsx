@@ -1,8 +1,5 @@
-import React, { RefObject } from "react";
-import { useEffect } from "react";
+import React from "react";
 import { useState } from "react";
-import { useRef } from "react";
-import { Text12pxBold } from "../typography/Typography";
 import styles from "./textInput.module.css";
 
 export interface TextInputProps {

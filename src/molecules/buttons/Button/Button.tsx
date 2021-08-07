@@ -53,8 +53,8 @@ export const Button: React.FC<ButtonProps> = ({
       <svg width="250" height="62">
         <defs>
           <linearGradient id={`gradient-${type}`}>
-            <stop offset="0%" stop-color={gradientColors[0]} />
-            <stop offset="100%" stop-color={gradientColors[1]} />
+            <stop offset="0%" stopColor={gradientColors[0]} />
+            <stop offset="100%" stopColor={gradientColors[1]} />
           </linearGradient>
         </defs>
         <rect
